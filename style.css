@@ -65,7 +65,6 @@ nav li a:hover{
 }
 .logotxt h1{
     color: #fff;
-    padding-right: 430px;
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
 }
@@ -74,6 +73,8 @@ nav li a:hover{
     font-family: 'Inter', sans-serif;
     font-family: 'Poppins', sans-serif;
     transition: 0.3s;
+    margin-right: 240px;
+
     
 }
 
@@ -124,6 +125,34 @@ nav li a:hover{
       }
     }
     
+    /* NAVEGAÇÂO */
+    @media screen and (max-width: 768px) {
+  
+      nav ul{
+          display: block;
+      }    
+  
+      .logo img {
+        width: 60px;
+        margin-left: -133px;
+        height: 60px;
+      }
+        
+      .logotxt{
+          display: block;
+          max-width: 120px;   
+      }
+      .logotxt h1{
+          padding-right: 0;
+      }
+      .logotxt a{
+        margin-left: -83px;
+        font-size: 19px;
+      }
+    }
+  
+  /* FIM NAVEGAÇÂO */
+
     @media (max-width: 960px) {
       .navbar-links {
         opacity: 0;
@@ -165,7 +194,7 @@ nav li a:hover{
         display: flex;
         flex-direction: column;
         gap: 6px;
-        margin-left: 50%;
+    
       }
     
       .btn-line {
@@ -336,24 +365,6 @@ img.logo-nasa{
   
     /* responsivo navegação*/
   
-    @media screen and (max-width: 768px) {
   
-      nav ul{
-          display: block;
-      }    
-  
-        
-      .logotxt{
-          display: block;
-          max-width: 120px;   
-      }
-      .logotxt h1{
-          padding-right: 0;
-      }
-      .logo img{
-          margin-left: -100px;
-      }
-      
-    }
   
   
