@@ -57,6 +57,7 @@ nav li a:hover{
 .logo img{
     width: 60px;
     height: 60px;
+    margin-left: -40px;
 }
 .logotxt{
     display: flex;
@@ -144,14 +145,16 @@ nav li a:hover{
       }
       .logotxt h1{
           padding-right: 0;
+          margin-left: -20px;
+
       }
       .logotxt a{
-        margin-left: -83px;
-        font-size: 19px;
+        margin-left: -20px;
+        
       }
     }
   
-  /* FIM NAVEGAÇÂO */
+  /* RESONSIVO NAV*/
 
     @media (max-width: 960px) {
       .navbar-links {
@@ -194,6 +197,8 @@ nav li a:hover{
         display: flex;
         flex-direction: column;
         gap: 6px;
+        margin-left: 30px;
+
     
       }
     
@@ -229,6 +234,7 @@ nav li a:hover{
     }
 }
 
+/* FIM NAVEGAÇÂO */
 
 /*main*/ 
 
@@ -280,6 +286,8 @@ main{
       padding-bottom: 3px;
   }
 
+  
+
 /* responsivo main*/
 
 @media (min-width: 768px) {
@@ -310,16 +318,45 @@ footer {
   max-width: 40%;
   height: auto;
   margin-bottom: 20px;
-}
-img.logo-nasa{
-  max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      width: 20%;
+  margin-left: 35px;
 }
 
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.social-icons,
+.support-section {
+  margin-top: 30px;
+}
+
+.social-icons a,
+.support-section a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.social-title,
+.support-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 .logo-selecta{
-  max-width: 100%;
+  max-width: 20%;
   height: auto;
   margin-bottom: 20px;
 }
@@ -328,25 +365,18 @@ img.logo-nasa{
   margin-top: 20px;
 }
 
-/* responsivo */
+/* responsivo footer*/
 
 @media (max-width: 600px) {
   footer {
       position: static;
   }
   .logo-hora{
-    max-width: 50%;
+    max-width: 80%;
     margin-bottom: 20px;
     margin-right: 1%;
 }
- 
-.logo-hora{
-  max-width: 50%;
-  margin-bottom: 20px;
-  margin-right: 1%;
-}
-
-.logo-selecta{
+  .logo-selecta{
       max-width: 100%;
       height: auto;
       margin-bottom: 20px;
@@ -362,9 +392,17 @@ img.logo-nasa{
     max-width: 100%;
     max-height: 100%;
   }
-  
-    /* responsivo navegação*/
-  
+    /* fim responsivo Footer*/
   
   
   
+  
+
+
+
+
+
+
+
+
+
