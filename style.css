@@ -246,60 +246,94 @@ main{
     
     }
     
-    .align-in-row {
-        display: flex;
-        flex-direction: row;
-        gap: 100px;
-    }  
   
-  .container{
-      padding-top: 4%;
-      padding-left: 6%;
-     
+  .u-text-placeholder {
+    background-color: #a2a8b1;
+    display: inline-block;
+    height: 9px;
   }
   
-  .cards-wrapper{
-    column-gap: 15px;
-  }
-  .card{ 
-      transition: all 0.3s;
-      margin-left: 10px;
-      
-  }
-  .card:hover{
-      transform: scale(1.10);
-  }
-      .btn{
-          padding-top: 10px;
-      }
-  
-  
-  .card-body {
-      -ms-flex: 1 1 auto;
-      flex: 1 1 auto;
-      min-height: 1px;
-      padding: 1.5rem;
+  .l-cards {
+    display: grid;
+    grid-gap: 80px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
   }
   
-  .card-title {
-      margin-bottom: 0.75rem;
-      padding-bottom: 3px;
-  }
-
-  
-
-/* responsivo main*/
-
-@media (min-width: 768px) {
-    .card img {
-      height: 11em;
+  .c-card {
+    background-color: #ced4da;
+    border-radius: .6rem;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    
+    &__image {
+      align-items: center;
+      background-color: #b5b9c1;
+      display: flex;
+      flex: 5;
+      justify-content: center;
+      overflow: hidden;
     }
-    .cards-wrapper {
-        width: 80%;
-        
-      }
-      
+    
+    &__content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      justify-content: space-around;
+      padding: 15px;
+    }
   }
+  .c-card{
+    transition: all 0.3s;
+    margin-left: 10px;}
+  .c-card:hover{
+        transform: scale(1.1);
+  }
+
+  img{
+    border-top-left-radius: calc(.30rem - 1px);
+    border-top-right-radius: calc(.30rem - 1px);
+  }
+
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.5rem;
+    background-color: #fff;
+}
+
+.card-title {
+    margin-bottom: 0.75rem;
+    padding-bottom: 3px;
+}
+button{
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+button{
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 15px;
+}
 
 /*footer*/
 
@@ -312,6 +346,7 @@ footer {
   bottom: 0;
   width: 100%;
   font-family: 'Open Sans', sans-serif;
+  margin-top: 370px;
 }
 
 .logo-hora {
@@ -370,6 +405,7 @@ footer {
 @media (max-width: 600px) {
   footer {
       position: static;
+      margin-top: 2300px;
   }
   .logo-hora{
     max-width: 80%;
