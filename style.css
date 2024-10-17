@@ -88,7 +88,7 @@ nav li a:hover{
     flex-direction: column;
     background-color: #007bff;
     position: absolute;
-    top: 60px; /* Ajuste conforme necessário */
+    top: 60px; 
     left: 0;
     width: 100%;
     z-index: 999;
